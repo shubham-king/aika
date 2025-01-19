@@ -1,0 +1,54 @@
+{
+    "name": "custom-video-player",
+    "version": "1.0.0",
+    "description": "A customizable HTML5 video player with captions, themes, and adaptive streaming support for HLS and DASH.",
+    "main": "dist/player.js",
+    "module": "src/js/player.js",
+    "scripts": {
+      "start": "webpack serve --mode development --open",
+      "build": "webpack --mode production",
+      "lint": "eslint src/**/*.js",
+      "test": "jest"
+    },
+    "keywords": [
+      "html5",
+      "video player",
+      "hls",
+      "dash",
+      "adaptive streaming",
+      "custom player",
+      "open source"
+    ],
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {
+      "dashjs": "^4.7.0",
+      "hls.js": "^1.5.0"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.22.0",
+      "@babel/preset-env": "^7.22.0",
+      "babel-loader": "^9.1.2",
+      "css-loader": "^6.8.1",
+      "eslint": "^8.52.0",
+      "jest": "^29.7.0",
+      "sass": "^1.69.0",
+      "sass-loader": "^13.3.1",
+      "style-loader": "^3.3.2",
+      "webpack": "^5.88.1",
+      "webpack-cli": "^5.1.4",
+      "webpack-dev-server": "^4.15.1"
+    },
+    "engines": {
+      "node": ">=16.0.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/yourusername/custom-video-player.git"
+    },
+    "bugs": {
+      "url": "https://github.com/yourusername/custom-video-player/issues"
+    },
+    "homepage": "https://github.com/yourusername/custom-video-player#readme"
+  }
+  

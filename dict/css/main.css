@@ -1,0 +1,75 @@
+/* Core Player Styles */
+.custom-player {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.custom-player video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.custom-player-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.custom-player-controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.custom-player-controls .progress-bar {
+    flex-grow: 1;
+    height: 5px;
+    background: #555;
+    margin: 0 10px;
+    position: relative;
+}
+
+.custom-player-controls .progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: #1e90ff;
+    transition: width 0.3s;
+}
+
+/* Light Theme */
+.custom-player-light {
+    background: #f9f9f9;
+    color: #333;
+}
+
+.custom-player-light .custom-player-controls {
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+/* Dark Theme */
+.custom-player-dark {
+    background: #222;
+    color: #fff;
+}
+
+.custom-player-dark .custom-player-controls {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}

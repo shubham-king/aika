@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="dist/css/main.min.css">
+</head>
+<body>
+    <div id="video-container"></div>
+
+    <script src="dist/js/player.min.js"></script>
+    <script>
+        const player = new CustomPlayer('#video-container', {
+            src: 'https://example.com/video.mp4',
+            type: 'video/mp4',
+            captions: [
+                { src: 'captions.vtt', kind: 'subtitles', srclang: 'en', label: 'English', default: true },
+            ],
+            theme: 'dark',
+        });
+    </script>
+</body>
+</html>
