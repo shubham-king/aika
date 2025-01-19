@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Video Player</title>
-    <link rel="stylesheet" href="dist/css/main.min.css">
+    <title>CustomPlayer - A Modern HTML5 Video Player</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div id="video-container"></div>
+    <header class="header">
+        <h1>CustomPlayer 🎥</h1>
+        <p>A lightweight, customizable, and feature-rich HTML5 video player.</p>
+        <a href="documentation.html" class="btn">View Documentation</a>
+    </header>
 
-    <script src="dist/js/player.min.js"></script>
+    <main class="demo">
+        <h2>Player Demo</h2>
+        <div id="video-container" class="custom-player"></div>
+    </main>
+
+    <footer class="footer">
+        <p>Made with ❤️ by the CustomPlayer team.</p>
+    </footer>
+
+    <script src="js/player.js"></script>
     <script>
         const player = new CustomPlayer('#video-container', {
-            src: 'https://example.com/video.mp4',
+            src: 'assets/sample.mp4',
             type: 'video/mp4',
             captions: [
-                { src: 'captions.vtt', kind: 'subtitles', srclang: 'en', label: 'English', default: true },
+                { src: 'assets/captions.vtt', kind: 'subtitles', srclang: 'en', label: 'English', default: true },
             ],
-            theme: 'dark',
+            theme: 'light',
         });
     </script>
 </body>

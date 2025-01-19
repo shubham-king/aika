@@ -1,0 +1,8 @@
+.custom-player.light {
+    background: #f9f9f9;
+    color: #333;
+}
+.custom-player.dark {
+    background: #222;
+    color: #fff;
+}

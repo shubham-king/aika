@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - CustomPlayer</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <h1>CustomPlayer Documentation</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#installation">Installation</a>
+            <a href="#usage">Usage</a>
+            <a href="#api">API</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="installation">
+            <h2>Installation</h2>
+            <p>Install CustomPlayer using npm or include it via CDN:</p>
+            <pre><code>npm install customplayer</code></pre>
+            <p>Or add the following to your HTML:</p>
+            <pre><code>
+<link rel="stylesheet" href="css/main.css">
+<script src="js/player.js"></script>
+            </code></pre>
+        </section>
+
+        <section id="usage">
+            <h2>Usage</h2>
+            <p>Initialize the player with the following code:</p>
+            <pre><code>
+const player = new CustomPlayer('#video-container', {
+    src: 'assets/sample.mp4',
+    type: 'video/mp4',
+    captions: [
+        { src: 'assets/captions.vtt', kind: 'subtitles', srclang: 'en', label: 'English', default: true },
+    ],
+    theme: 'light',
+});
+            </code></pre>
+        </section>
+
+        <section id="api">
+            <h2>API</h2>
+            <p>Explore available options:</p>
+            <ul>
+                <li><strong>src</strong>: Path to the video file.</li>
+                <li><strong>type</strong>: MIME type of the video (e.g., `video/mp4`).</li>
+                <li><strong>captions</strong>: Array of caption tracks.</li>
+                <li><strong>theme</strong>: `light` or `dark` theme.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 CustomPlayer Team. All rights reserved.</p>
+    </footer>
+</body>
+</html>
